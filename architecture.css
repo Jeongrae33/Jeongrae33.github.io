@@ -3,9 +3,23 @@
 .architecture-hint{display:block;margin-top:12px;text-align:right;font-size:10px;letter-spacing:.3px}
 .research-row>.architecture-image{align-self:center}
 .research-row--text{grid-template-columns:1fr}
-.publication-with-image{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.45fr);gap:24px;align-items:center}
+.publication-with-image{display:grid;grid-template-columns:220px minmax(0,1fr);gap:28px;align-items:start}
 .publication-content{min-width:0}
-.publication-image{align-self:center;padding:9px}
+.publication-image{align-self:start;padding:10px;background:#fff}
+.publication-image img{height:115px;object-fit:contain}
+.publication-image .architecture-hint{margin-top:8px;font-size:9px}
+.publications{background:transparent;padding-inline:0}
+.publications .section-heading{align-items:start}
+.publications .section-heading>.muted{display:none}
+.publications .publication-group+.publication-group{margin-top:45px}
+.publications .publication-group-title{font-size:13px;letter-spacing:.3px;margin-bottom:10px;color:var(--green)}
+.publications .publication-year-group{display:block}
+.publications .publication-year{font-size:11px;margin:0 0 12px;color:var(--muted)}
+.publications .publication{padding:25px 0}
+.publications .publication-title{font-size:17px;line-height:1.6;margin-bottom:8px}
+.publications .publication-authors{line-height:1.9}
+.publications .publication:not(.publication-with-image)>.publication-content{margin-left:248px}
+.publications .under-review{padding-top:0;border-top:0}
 #architecture-viewer{padding:18px;border:1px solid var(--line);border-radius:5px;background:var(--bg);color:var(--ink);width:min(1320px,94vw);max-width:94vw;max-height:94vh;overflow:auto}
 #architecture-viewer::backdrop{background:#17211deb}
 .architecture-toolbar{display:flex;justify-content:flex-end;align-items:center;flex-wrap:wrap;gap:10px;margin-bottom:14px}
@@ -14,4 +28,5 @@
 .architecture-canvas img{display:block;width:100%;height:auto;max-height:71vh;object-fit:contain;background:#fff;cursor:zoom-in}
 .architecture-canvas.is-original img{width:auto;height:auto;max-width:none;max-height:none;cursor:zoom-out}
 #architecture-caption{font-size:12px;color:var(--muted);margin:12px 0 0}
-@media(max-width:760px){.publication-with-image{grid-template-columns:1fr;gap:18px}.publication-image{width:100%}.architecture-toolbar{justify-content:flex-start;gap:7px}.architecture-toolbar button,.architecture-toolbar a{font-size:11px;padding:6px 9px}#architecture-viewer{padding:12px}.architecture-canvas{max-height:70vh}}
+@media(max-width:900px) and (min-width:761px){.publication-with-image{grid-template-columns:180px minmax(0,1fr);gap:22px}.publications .publication:not(.publication-with-image)>.publication-content{margin-left:202px}}
+@media(max-width:760px){.publication-with-image{grid-template-columns:1fr;gap:18px}.publication-image{width:100%;max-width:400px}.publication-image img{height:150px}.publications .publication:not(.publication-with-image)>.publication-content{margin-left:0}.publications .publication-title{font-size:16px}.publications .publication-group+.publication-group{margin-top:32px}.architecture-toolbar{justify-content:flex-start;gap:7px}.architecture-toolbar button,.architecture-toolbar a{font-size:11px;padding:6px 9px}#architecture-viewer{padding:12px}.architecture-canvas{max-height:70vh}}
