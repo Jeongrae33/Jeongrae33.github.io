@@ -1,0 +1,22 @@
+# Jeongrae Kim · Research Homepage
+
+국문·영문 연구자 홈페이지입니다. HTML/CSS/JavaScript로 작성되어 빌드나 패키지 설치가 필요하지 않습니다.
+
+## 로컬 보기
+
+`index.html`을 브라우저로 열거나, 저장소 폴더에서 `python -m http.server 8000`을 실행한 뒤 http://localhost:8000 을 엽니다.
+
+## GitHub Pages 배포
+
+GitHub 저장소 Settings → Pages → Build and deployment → Source에서 **GitHub Actions**를 선택합니다. main 브랜치에 push하면 `.github/workflows/pages.yml`이 배포합니다. 최초 설정 후 Actions에서 워크플로를 수동 실행할 수도 있습니다.
+
+현재 저장소 이름은 `Jeongrae33..github.io`로 마침표가 두 개입니다. 따라서 일반 프로젝트 Pages 주소는 `https://jeongrae33.github.io/Jeongrae33..github.io/`입니다. `https://jeongrae33.github.io/`를 원한다면 저장소 이름을 `Jeongrae33.github.io`로 변경해야 합니다. 파일 경로는 상대 경로이므로 두 경우 모두 동작합니다.
+
+## 내용 수정
+
+- `index.html`: 국문 내용, `data-en` 속성의 영문 내용
+- `styles.css`: 색상, 레이아웃, 모바일 화면
+- `script.js`: 언어 전환 및 이력서 다운로드 언어 연결
+- `assets/`: 프로필 사진 및 국문·영문 이력서 원본(DOCX)
+
+연구 성과와 소속은 제공된 이력서를 기준으로 작성했습니다. TGM-DETR는 제출 상태, RF 생체신호 탐지는 연구 제안으로 표시했습니다. 원문 링크가 제공되지 않은 논문에는 임의의 링크를 넣지 않았습니다.
