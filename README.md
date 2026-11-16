@@ -20,7 +20,7 @@ All assets use relative paths.
 
 - `index.html`: 국문 내용, `data-en` 속성의 영문 내용
 - `styles.css`: 색상, 레이아웃, 모바일 화면
-- `script.js`: 언어 전환 및 이력서 다운로드 언어 연결
-- `assets/`: 프로필 사진 및 국문·영문 이력서 원본(DOCX)
+- `script.js`: Language switching and Memory photo viewer
+- `assets/`: Profile photo and Memory gallery images
 
 연구 성과와 소속은 제공된 이력서를 기준으로 작성했습니다. TGM-DETR는 제출 상태로 표시했습니다. 원문 링크가 제공되지 않은 논문에는 임의의 링크를 넣지 않았습니다.

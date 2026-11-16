@@ -10,7 +10,6 @@ function setLanguage(language) {
   translatedImages.forEach(image => { image.alt = english ? image.dataset.altEn : image.dataset.altKo; });
   languageButton.innerHTML = `${english ? 'KO' : 'EN'} <span>↗</span>`;
   languageButton.setAttribute('aria-label', english ? '한국어로 전환' : 'Switch to English');
-  document.querySelector('#cv-link').href = `assets/Jeongrae_Kim_CV_${english ? 'EN' : 'KO'}.docx`;
   try { localStorage.setItem('jeongrae-language', language); } catch { /* The page also works without storage. */ }
 }
 languageButton.addEventListener('click', () => setLanguage(document.documentElement.lang === 'ko' ? 'en' : 'ko'));
