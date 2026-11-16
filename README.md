@@ -10,7 +10,11 @@
 
 GitHub 저장소 Settings → Pages → Build and deployment → Source에서 **GitHub Actions**를 선택합니다. main 브랜치에 push하면 `.github/workflows/pages.yml`이 배포합니다. 최초 설정 후 Actions에서 워크플로를 수동 실행할 수도 있습니다.
 
-현재 저장소 이름은 `Jeongrae33..github.io`로 마침표가 두 개입니다. 따라서 일반 프로젝트 Pages 주소는 `https://jeongrae33.github.io/Jeongrae33..github.io/`입니다. `https://jeongrae33.github.io/`를 원한다면 저장소 이름을 `Jeongrae33.github.io`로 변경해야 합니다. 파일 경로는 상대 경로이므로 두 경우 모두 동작합니다.
+Repository: `Jeongrae33.github.io`
+
+Homepage: https://jeongrae33.github.io/
+
+All assets use relative paths.
 
 ## 내용 수정
 
