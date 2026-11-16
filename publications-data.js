@@ -4,6 +4,7 @@ window.RESEARCH_PUBLICATIONS = {
   publications: [
     {
       id: 'qam-detr',
+      image: { src: 'assets/images/qam-detr-architecture.png', alt: 'QAM-DETR architecture — Figure 1 from the paper', width: 1962, height: 682 },
       title: 'QAM-DETR: Quality-Aware Mamba DETR for Audio Moment Retrieval from Long Audio',
       authors: ['JeongRae Kim', 'Ho jun Jung', 'Yewon Park', 'Changwon Lim'],
       venue: 'DCASE 2026 Workshop',
@@ -19,6 +20,7 @@ window.RESEARCH_PUBLICATIONS = {
     },
     {
       id: 'sam3dual',
+      image: { src: 'assets/images/sam3dual-architecture.png', alt: 'SAM3Dual architecture — Figure 1 from the paper', width: 2600, height: 862 },
       title: 'SAM3Dual: A 3rd Place Solution to the MOSEv2 Track, 8th LSVOS Challenge',
       authors: ['JeongRae Kim', 'Chaehyun Kim', 'Changwon Lim'],
       venue: 'ECCV 2026 LSVOS Challenge',
@@ -31,6 +33,7 @@ window.RESEARCH_PUBLICATIONS = {
     },
     {
       id: 'sam2dual',
+      image: { src: 'assets/images/sam2dual-architecture.png', alt: 'SAM2Dual architecture — Figure 2 from the paper', width: 5331, height: 1747 },
       title: 'SAM2Dual: Training-Free, Dual Memory for Long-Term Video Object Segmentation',
       authors: ['JeongRae Kim', 'Changwon Lim'],
       venue: 'arXiv Preprint',
@@ -42,6 +45,7 @@ window.RESEARCH_PUBLICATIONS = {
     },
     {
       id: 'continuity-driven',
+      image: { src: 'assets/images/continuity-architecture.png', alt: 'Continuity-driven method overview — Figure 2 from the paper', width: 1311, height: 627 },
       title: 'Continuity-Driven Representation Learning for Industrial Defect Detection',
       authors: ['Minjong Kim', 'Hyun Jun Kim', 'Jeongrae Kim', 'Heeseung Shin', 'Changwon Lim'],
       venue: 'arXiv Preprint',

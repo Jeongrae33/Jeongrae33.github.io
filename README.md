@@ -24,6 +24,12 @@ All assets use relative paths.
 - `assets/`: Profile photo and Memory gallery images
 - `publications-data.js`: Publication metadata; add papers here to update the list automatically.
 - `publications.js`: Academic list rendering, authorship sorting, and conditional link buttons.
+- `architecture.css` / `architecture.js`: Responsive architecture previews and the original-size image viewer.
+- `assets/images/sources.json`: Official PDF sources, page/figure numbers, original image dimensions, and checksums.
+
+## Architecture figures
+
+QAM-DETR (Figure 1), SAM3Dual (Figure 1), SAM2Dual (Figure 2), and Continuity-Driven (Figure 2) use the original embedded images from the linked official PDFs, converted losslessly to PNG without redrawing or resizing. The optional `image` field in publication data contains its relative `src`, descriptive `alt`, and native `width` / `height`. Omit this field when no verified figure is available. No TGM-DETR architecture file was available, so its entries remain text-only. Image previews open a dialog with fit-to-screen, original-size scrolling, and a direct original-image link. Existing Memory photos keep their separate viewer.
 
 ## Updating publications
 

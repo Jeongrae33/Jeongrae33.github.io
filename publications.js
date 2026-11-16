@@ -19,6 +19,25 @@
   const renderPaper = paper => {
     const item = make('li', 'publication');
     item.id = `publication-${paper.id}`;
+    const content = make('div', 'publication-content');
+    if (paper.image?.src) {
+      const preview = make('a', 'architecture-image publication-image');
+      preview.href = paper.image.src;
+      preview.setAttribute('aria-label', `Enlarge ${paper.image.alt}`);
+      const image = make('img');
+      image.src = paper.image.src;
+      image.alt = paper.image.alt;
+      image.width = paper.image.width;
+      image.height = paper.image.height;
+      image.loading = 'lazy';
+      image.addEventListener('error', () => {
+        preview.remove();
+        item.classList.remove('publication-with-image');
+      }, { once: true });
+      preview.append(image, make('span', 'architecture-hint', 'View architecture ↗'));
+      item.classList.add('publication-with-image');
+      item.append(preview);
+    }
     const title = make('h4', 'publication-title', paper.title);
     const authors = make('p', 'publication-authors');
     addNames(authors, paper.authors);
@@ -27,9 +46,9 @@
       addNames(authors, paper.includedAuthors);
       authors.append(')');
     }
-    item.append(title, authors, make('p', 'publication-venue', `${paper.venue} · ${paper.year}`));
-    if (paper.highlight) item.append(make('span', 'publication-award', paper.highlight));
-    item.append(make('p', 'publication-topic', `${paper.topic} · ${paper.status}`));
+    content.append(title, authors, make('p', 'publication-venue', `${paper.venue} · ${paper.year}`));
+    if (paper.highlight) content.append(make('span', 'publication-award', paper.highlight));
+    content.append(make('p', 'publication-topic', `${paper.topic} · ${paper.status}`));
     const links = make('div', 'publication-links');
     Object.entries(paper.links || {}).forEach(([label, url]) => {
       if (!['PDF', 'arXiv', 'Proceedings'].includes(label) || !url) return;
@@ -41,7 +60,8 @@
       link.setAttribute('aria-label', `${label}: ${paper.title} (opens in a new tab)`);
       links.append(link);
     });
-    if (links.children.length) item.append(links);
+    if (links.children.length) content.append(links);
+    item.append(content);
     return item;
   };
   const published = [...data.publications].sort((a, b) => Number(firstAuthor(b)) - Number(firstAuthor(a)) || newestFirst(a, b));

@@ -1,0 +1,42 @@
+[
+  {
+    "file": "qam-detr-architecture.png",
+    "source": "https://dcase.community/documents/workshop2026/proceedings/DCASE2026Workshop_Kim_35.pdf",
+    "page": 2,
+    "figure": 1,
+    "extraction": "Original embedded raster image, losslessly converted to PNG; no redrawing, cropping, or resizing.",
+    "width": 1962,
+    "height": 682,
+    "sha256": "15fe4651365afd0fce4e1ef4f5076cee0364a868110032bd4c974c00343e92c7"
+  },
+  {
+    "file": "sam3dual-architecture.png",
+    "source": "https://arxiv.org/pdf/2608.22193",
+    "page": 4,
+    "figure": 1,
+    "extraction": "Original embedded raster image, losslessly converted to PNG; no redrawing, cropping, or resizing.",
+    "width": 2600,
+    "height": 862,
+    "sha256": "216f70411deba5ec605e36c1cce3efb441fc5223d261145c2ff680eb65c8d31e"
+  },
+  {
+    "file": "sam2dual-architecture.png",
+    "source": "https://arxiv.org/pdf/2608.18640",
+    "page": 3,
+    "figure": 2,
+    "extraction": "Original embedded raster image, losslessly converted to PNG; no redrawing, cropping, or resizing.",
+    "width": 5331,
+    "height": 1747,
+    "sha256": "938c1f713433d59e5bfed122b53b72b55d4b22a8314f291739d3bd104a21237a"
+  },
+  {
+    "file": "continuity-architecture.png",
+    "source": "https://arxiv.org/pdf/2608.17362",
+    "page": 5,
+    "figure": 2,
+    "extraction": "Original embedded raster image, losslessly converted to PNG; no redrawing, cropping, or resizing.",
+    "width": 1311,
+    "height": 627,
+    "sha256": "f8a41cc95bef7c41b66d41bb42d08a4a1b6cc54e287fd7be8add3a11eaff25bf"
+  }
+]

@@ -1,0 +1,17 @@
+.architecture-image{display:flex;flex-direction:column;justify-content:center;align-items:stretch;min-width:0;background:#fff;border:1px solid var(--line);border-radius:4px;padding:12px;cursor:zoom-in;color:var(--muted)}
+.architecture-image img{display:block;width:100%;height:auto;object-fit:contain;background:#fff}
+.architecture-hint{display:block;margin-top:12px;text-align:right;font-size:10px;letter-spacing:.3px}
+.research-row>.architecture-image{align-self:center}
+.research-row--text{grid-template-columns:1fr}
+.publication-with-image{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.45fr);gap:24px;align-items:center}
+.publication-content{min-width:0}
+.publication-image{align-self:center;padding:9px}
+#architecture-viewer{padding:18px;border:1px solid var(--line);border-radius:5px;background:var(--bg);color:var(--ink);width:min(1320px,94vw);max-width:94vw;max-height:94vh;overflow:auto}
+#architecture-viewer::backdrop{background:#17211deb}
+.architecture-toolbar{display:flex;justify-content:flex-end;align-items:center;flex-wrap:wrap;gap:10px;margin-bottom:14px}
+.architecture-toolbar button,.architecture-toolbar a{font:inherit;font-size:12px;border:1px solid var(--line);border-radius:3px;background:#fff;color:var(--ink);padding:6px 12px;cursor:pointer}
+.architecture-canvas{overflow:auto;max-height:73vh;background:#fff;border:1px solid var(--line);overscroll-behavior:contain}
+.architecture-canvas img{display:block;width:100%;height:auto;max-height:71vh;object-fit:contain;background:#fff;cursor:zoom-in}
+.architecture-canvas.is-original img{width:auto;height:auto;max-width:none;max-height:none;cursor:zoom-out}
+#architecture-caption{font-size:12px;color:var(--muted);margin:12px 0 0}
+@media(max-width:760px){.publication-with-image{grid-template-columns:1fr;gap:18px}.publication-image{width:100%}.architecture-toolbar{justify-content:flex-start;gap:7px}.architecture-toolbar button,.architecture-toolbar a{font-size:11px;padding:6px 9px}#architecture-viewer{padding:12px}.architecture-canvas{max-height:70vh}}
