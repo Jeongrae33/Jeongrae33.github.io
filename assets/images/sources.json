@@ -38,5 +38,13 @@
     "width": 1311,
     "height": 627,
     "sha256": "f8a41cc95bef7c41b66d41bb42d08a4a1b6cc54e287fd7be8add3a11eaff25bf"
+  },
+  {
+    "file": "tgm-detr-architecture.png",
+    "source": "Author-provided image/TGM.png",
+    "extraction": "Original author-provided PNG copied without modification.",
+    "width": 1618,
+    "height": 348,
+    "sha256": "cc2ebdd35d60db8c71bb3628ee79fde8fb4cbea4faaa651676b001674c208f36"
   }
 ]

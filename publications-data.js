@@ -72,6 +72,7 @@ window.RESEARCH_PUBLICATIONS = {
   underReview: [
     {
       id: 'tgm-detr',
+      image: { src: 'assets/images/tgm-detr-architecture.png', alt: 'TGM-DETR architecture provided by the author', width: 1618, height: 348 },
       title: 'TGM-DETR: Temporally Guided Mamba DETR with Boundary-Aware Verification for Audio Moment Retrieval',
       authors: ['Jeongrae Kim', 'Ho jun Jung', 'Yewon Park', 'Changwon Lim'],
       venue: 'ICASSP 2027 (Submitted)',
