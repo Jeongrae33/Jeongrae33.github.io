@@ -2,7 +2,7 @@ const languageButton = document.querySelector('#language');
 const translated = [...document.querySelectorAll('[data-en]')];
 const translatedImages = [...document.querySelectorAll('[data-alt-en]')];
 translatedImages.forEach(image => { image.dataset.altKo = image.alt; });
-translated.forEach(element => { element.dataset.ko = element.innerHTML; });
+translated.forEach(element => { element.dataset.ko ||= element.innerHTML; });
 function setLanguage(language) {
   const english = language === 'en';
   document.documentElement.lang = english ? 'en' : 'ko';
@@ -13,7 +13,7 @@ function setLanguage(language) {
   try { localStorage.setItem('jeongrae-language', language); } catch { /* The page also works without storage. */ }
 }
 languageButton.addEventListener('click', () => setLanguage(document.documentElement.lang === 'ko' ? 'en' : 'ko'));
-try { if (localStorage.getItem('jeongrae-language') === 'en') setLanguage('en'); } catch { /* Use Korean by default. */ }
+setLanguage('en'); // English is the default; Korean remains available through the language button.
 document.querySelector('#year').textContent = new Date().getFullYear();
 
 const viewer = document.querySelector('#photo-viewer');
