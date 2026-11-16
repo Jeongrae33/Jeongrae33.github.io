@@ -29,7 +29,7 @@ All assets use relative paths.
 
 ## Architecture figures
 
-QAM-DETR (Figure 1), SAM3Dual (Figure 1), SAM2Dual (Figure 2), and Continuity-Driven (Figure 2) use the original embedded images from the linked official PDFs, converted losslessly to PNG without redrawing or resizing. The optional `image` field in publication data contains its relative `src`, descriptive `alt`, and native `width` / `height`. Omit this field when no verified figure is available. No TGM-DETR architecture file was available, so its entries remain text-only. Image previews open a dialog with fit-to-screen, original-size scrolling, and a direct original-image link. Existing Memory photos keep their separate viewer.
+QAM-DETR (Figure 1), SAM3Dual (Figure 1), SAM2Dual (Figure 2), and Continuity-Driven (Figure 2) use the original embedded images from the linked official PDFs, converted losslessly to PNG without redrawing or resizing. The optional `image` field in publication data contains its relative `src`, descriptive `alt`, and native `width` / `height`. Omit this field when no verified figure is available. No verified TGM-DETR architecture file was available, so its Publications entry remains text-only. Research previews use the owner-supplied `project1.png` (QAM-DETR), `project2.png` (SAM3Dual), and `project3.png` (TGM-DETR) overview illustrations; these are separate from the original paper figures in Publications. Image previews open a dialog with fit-to-screen, original-size scrolling, and a direct original-image link. Existing Memory photos keep their separate viewer.
 
 ## Updating publications
 
